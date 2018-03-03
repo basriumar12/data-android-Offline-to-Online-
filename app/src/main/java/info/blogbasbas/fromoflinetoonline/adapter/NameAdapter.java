@@ -1,6 +1,7 @@
 package info.blogbasbas.fromoflinetoonline.adapter;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import java.util.List;
 
 import info.blogbasbas.fromoflinetoonline.R;
 import info.blogbasbas.fromoflinetoonline.pojo.Nama;
+import info.blogbasbas.fromoflinetoonline.pojo.getdata.DataItem;
 
 /**
  * Created by User on 26/02/2018.
@@ -20,6 +22,10 @@ import info.blogbasbas.fromoflinetoonline.pojo.Nama;
 public class NameAdapter extends ArrayAdapter<Nama> {
     private List<Nama> names;
     private Context context;
+
+
+
+
 
     public NameAdapter(Context context, int resource, List<Nama>names) {
         super(context, resource, names);

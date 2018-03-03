@@ -13,7 +13,9 @@ public class ApiClient {
     public static Retrofit getClient(){
         if (retrofit == null){
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.1.106/oflinetoonline/")
+                    .baseUrl("https://wisata-smg-basri.000webhostapp.com/oflinetoonline/oflinetoonline/")
+                   // .baseUrl("http://192.168.1.16/oflinetoonline/")
+
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
