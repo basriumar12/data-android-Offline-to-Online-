@@ -22,7 +22,7 @@ public interface ApiInterface {
    /* //interface offline
     @GET("get.php")
     Call<ResponseGetData> getdata ();*/
-//interface online
+//interface online //
     @GET("getdata.php")
     Call<ResponseGetData> getdata ();
 
