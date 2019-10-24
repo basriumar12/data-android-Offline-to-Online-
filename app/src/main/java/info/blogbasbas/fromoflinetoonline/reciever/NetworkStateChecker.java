@@ -19,6 +19,7 @@ import retrofit2.Response;
 
 /**
  * Created by User on 27/02/2018.
+ * this function to test network, there is a network or not
  */
 
 public class NetworkStateChecker extends BroadcastReceiver {
@@ -49,7 +50,7 @@ public class NetworkStateChecker extends BroadcastReceiver {
             }
         }
     }
-
+// save name database 
     private void saveName(final int id, final String nama) {
         ApiInterface service = ApiClient.getClient().create(ApiInterface.class);
         Call<ResponseInsert> call = service.insertName(nama);
